@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # quantum_hash_project
 Prototype quantum hash function using parameterized circuits - with testing entropy, collision, avalanche &amp; bit independence tests. Built with Qiskit.
 
@@ -122,3 +123,6 @@ If using this project in academic work, please cite as:
 
 Feel free to contribute or reach out for collaboration!
 
+=======
+# MARK-B.L.U.
+>>>>>>> 230c54c6328c41433cd53112e692b687682f0691
