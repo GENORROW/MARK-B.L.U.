@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-# quantum_hash_project
-Prototype quantum hash function using parameterized circuits - with testing entropy, collision, avalanche &amp; bit independence tests. Built with Qiskit.
-
-# Mark-1: A Quantum Hash Function Prototype
+# MARK-B.L.U. 1.0: Part1: The Hashing Mechanism
 
 ## Overview
 
-Mark-1 of a prototype quantum hash function built using parameterized quantum circuits. It simulates a hash mechanism based on quantum circuit behavior, aiming to explore the feasibility of quantum-era cryptographic primitives.
+The MARK-B.L.U. Architecture is quantum encryption framework built using parameterized quantum circuits. It simulates a hash mechanism based on quantum circuit behavior, to safeguard autonomous & AI Infrastructure.
 
-It's apparent for anyone with a little domain know-how as to how & why quantum hash functions may offer new cryptographic security models in the presence of quantum computing capabilities. This project demonstrates a first-step implementation that maps classical input data to quantum parameters, extracts measurement-based signatures, and ensures desirable hash properties such as high entropy and sensitivity to input changes.
+This mechanism demonstrates a first-step implementation that maps classical input data to quantum parameters, extracts measurement-based signatures, and secures agent identity & output communication logs.
 
 ## Features
 
@@ -94,30 +90,6 @@ quantum_hash_project/
 - Operates on simulated quantum circuits (limited scalability)
 - Uses statevector output, which may contain biases
 - Fixed number of qubits (16) and layers (3)
-
-## Future Work
-
-- Transition to measurement-based output extraction
-- Postprocessing via classical mixing functions
-- More statistical testing (NIST suite)
-- Implementation on real quantum hardware
-
-## License
-
-MIT License. See `LICENSE` file for details.
-
-## Citation
-
-If using this project in academic work, please cite as:
-
-```bibtex
-@misc{mark1_quantum_hash,
-  author = Bhvyadhirr Bharadwaj,
-  title = {Mark-1: A Quantum Hash Function Prototype},
-  year = {2025},
-  howpublished = {\url{https://github.com/Blitzkrieg27/quantum_hash_project}},
-}
-```
 
 ---
 
