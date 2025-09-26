@@ -1,4 +1,4 @@
-# MARK-B.L.U. 1.0: Part1: The Hashing Mechanism
+# MARK-B.L.U. 1.0: Part-1: The Hashing Mechanism
 
 ## Overview
 
