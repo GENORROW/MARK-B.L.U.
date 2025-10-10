@@ -1,0 +1,282 @@
+[
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-001",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:49.252242",
+    "qrng_seed": "38febe2b2873738e1acad4b90c743e4840776f525aaf2ff58cf2b11fbd90a61d",
+    "badge": "8080817e7f853b808080828080808280"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-002",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:49.668893",
+    "qrng_seed": "53940071950cdefdbbedebe02ed762186eed0f9dd753fd1bc4768c8141e1f99f",
+    "badge": "7f807f7f7f7d477f7f80817f7f80817f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-003",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:50.065286",
+    "qrng_seed": "a208114908cc4561ac199631bd26fd490e00ee7ff9ef477873792e8d7ab27b36",
+    "badge": "807d7f7d807b5280807f8180807f8180"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-004",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:50.596246",
+    "qrng_seed": "b75c5e8fa0064b22a84a0ff82c1114dfb27ebc5d18811da279635a0632cecac6",
+    "badge": "7f7d817f7f885d808080818080808180"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-005",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:51.226728",
+    "qrng_seed": "a67668f07777d24639d927cd7e27fdb74449fd37ea2a9f9385fca6e8cab4a25f",
+    "badge": "7f7e7e7f7f938b7f7f7f7f7f7f7f7f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-006",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:51.769947",
+    "qrng_seed": "82268758f1ddcda0b67b6b7cb891c6f0b3f700c3d6b2fd88589642b777a0cf5f",
+    "badge": "7f7f7f80807f8380807f7f80807f7f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-007",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:52.319267",
+    "qrng_seed": "5912918ff5a037dc02e95d8dce1590aeca2d9a8a8dac54806f79f85d9a07b823",
+    "badge": "807e7f7f807d827f807f7f7f807f7f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-008",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:52.778554",
+    "qrng_seed": "5f0ff04ff4aa43c65c4bb0f06dd94852a79fc5b738b8d0705334d351105a90fb",
+    "badge": "7f7f7f7f8083817f807f7f7f807f7f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-009",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:53.216213",
+    "qrng_seed": "87641fdb3d3d93c31e5811518755be2a7cd453c66deca3344fb93deef3148893",
+    "badge": "7f7e7f807f827880807f8080807f8080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-010",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:53.573883",
+    "qrng_seed": "eb16e1e88ca6170bbe60220053e7d4dca7d72e4c19f2c22e7d386a90a83b13c4",
+    "badge": "8082817f808495807f807f807f807f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-011",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:54.164435",
+    "qrng_seed": "ec8a44926cd502d1e0d01ad2272b05a28f311e1bdc2f5435d517573c79e01619",
+    "badge": "80807e7f7f7e7b7f807f807f807f807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-012",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:54.961611",
+    "qrng_seed": "352573cf888a4da7a96e9803ac36159df91575c3e38875fcb5700a15c37ce09a",
+    "badge": "7f7f7f7e808a657f8080807f8080807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-013",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:55.698122",
+    "qrng_seed": "c50c57186e042fe221c9d5a46afa4ae5f58b7b013410857687fb4150290cbc1f",
+    "badge": "80807f80806ebe807f7f7e807f7f7e80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-014",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:56.224218",
+    "qrng_seed": "93257493d115839cfbfdb0ed59f5dd284a2402ac7263db5d9c585c1e8451b28c",
+    "badge": "8080807f7f7f737f8080807f8080807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-015",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:56.736240",
+    "qrng_seed": "a4a8cae41bc43adbb564df16d7287647825892617a3bb9a29205db04de617452",
+    "badge": "7f81827f80816b807f7f80807f7f8080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-016",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:57.197031",
+    "qrng_seed": "37c671a7c5b6b9f8aa69bf0267eba87fe074a0603f433941ed7f6444405f3705",
+    "badge": "807a807f7f7e9980807f7f80807f7f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-017",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:57.702730",
+    "qrng_seed": "9be0aac16d1e10b725c6f16d53ecf06ec1762862465956e0d3bd70b52c5fadcc",
+    "badge": "807e7f81807a8d7f807f7f7f807f7f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-018",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:58.339005",
+    "qrng_seed": "f0d25d2bf37ee46226047d7adfd9425400d6d2c1112d1fcf2706bd0c3e2c31fc",
+    "badge": "80807e8080786b808080808080808080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-019",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:58.841847",
+    "qrng_seed": "b9bc573b961f3a07ccf42191d82133c4d07426c8a184542ff33cbd48714b958b",
+    "badge": "7f7b7f7f7f7f81807f807f807f807f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-020",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:59.281819",
+    "qrng_seed": "4a274e71cbc4f8981e5a5651707260eb9c94d3af62ce81f35488029ecaf3b89e",
+    "badge": "807b807f7f826780807f8080807f8080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-021",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:11:59.676301",
+    "qrng_seed": "19fc43a3a105f8fa3e70309086d01a254b091cf8d735cee6754479d478b3e138",
+    "badge": "7f7f80808283a1807f7f7e807f7f7e80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-022",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:00.134208",
+    "qrng_seed": "3e8f45ba575d09d2679876f1797629e46c2101410160331e9c98aeaa2837a09f",
+    "badge": "7f7f8180808a65808080808080808080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-023",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:00.597753",
+    "qrng_seed": "d36235c236f931cb5b09504e8df73d31e16bf72a67d697297e74cf25c53307e7",
+    "badge": "7f7f817d8088717f7f80807f7f80807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-024",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:01.016610",
+    "qrng_seed": "8c67693df5169608417633debb96724001080adfcfc61117fbf8bb06ac54ea6c",
+    "badge": "7f807f7f817e7780807f8080807f8080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-025",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:01.373082",
+    "qrng_seed": "56ca7d10c6f6ed467b3168fd04abfaf7dae6b94fdb22e0b81afc804af5af4a67",
+    "badge": "7f807f7f7f7f8480807f7f80807f7f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-026",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:01.706876",
+    "qrng_seed": "5a1becd5969de02c33bc5c0b21f7eb89adaf3d2cfc7d9dcaeeb61465c2816fdb",
+    "badge": "80807f7f807593807f807f807f807f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-027",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:02.025290",
+    "qrng_seed": "27814354be0ab3b29bcba316e959f1b3be5733743372e5c41ea03616be70fb7e",
+    "badge": "7f7f81807f8d907f7f807f7f7f807f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-028",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:02.338879",
+    "qrng_seed": "c746d7e3d285594bd39dac628b9d41452d0b2dc372bf2cfc2335df0276f9cc6a",
+    "badge": "7f7d8080808683807f7f7f807f7f7f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-029",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:02.654956",
+    "qrng_seed": "9ce43292783ed7c78436e564f463f0aae790b05dcd4b0b17b7ef6519c9fa4314",
+    "badge": "807d807f808c8c8080807f8080807f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-030",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:02.938330",
+    "qrng_seed": "de910513e7523a2151d5fa6d15dd423f9416317922fb0f1df0bf2b3e504c9224",
+    "badge": "807e808080817c80807f8080807f8080"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-031",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:03.263174",
+    "qrng_seed": "1afa3bc10e2c10fa644f680f68297291a34cd18e8d04ae0ef8dae2577b0983ab",
+    "badge": "807f8080807fa1807f7f7e807f7f7e80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-032",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:03.579562",
+    "qrng_seed": "7d08c60ac2e5aef08d68c39048e1ce9b117b3d2653d3ebb291ce3b52008384b8",
+    "badge": "7f8080807f81777f7f80807f7f80807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-033",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:03.920359",
+    "qrng_seed": "116f000fd2bfce90d282d1eab188b20b0ee9263606f0fe4c1604120f6a40265a",
+    "badge": "7f7c80807f7f847f7f807f7f7f807f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-034",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:04.250815",
+    "qrng_seed": "3ed5c713c2014465c1cf8624d3e3215de9630c930127a8217e32b9d2c9dac69f",
+    "badge": "7f7c8281807d507f7f80817f7f80817f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-035",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:04.594162",
+    "qrng_seed": "f2c82360312cc17a7e0bcfa5bbd902a289aade5b5a600f30efce287cfa0de92d",
+    "badge": "7f7f7f7f8080837f80807f7f80807f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-036",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:04.920683",
+    "qrng_seed": "e51adcb699a7a9d0890a5172ebe7ba2e29795c3813d676c6dfec89a8700af10d",
+    "badge": "7f7f7f7f7f72907f7f807f7f7f807f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-037",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:05.260078",
+    "qrng_seed": "09de686233b828aac41f286bf6e6bb657947431153faa5fc5fca9d7c93731e3e",
+    "badge": "7f7d7e807f7e867f80807f7f80807f7f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-038",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:05.586846",
+    "qrng_seed": "aaf73fe5cd6945c29d7b6e6010315b6de0ce6af5626a555fe1c9350be7972af0",
+    "badge": "8080807e7f8780807f807f807f807f80"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-039",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:05.918692",
+    "qrng_seed": "cd5c1cd8a5a88732119074bb498aaeacba75652d8d610bc8c8275e3464a7d6f3",
+    "badge": "7f80817e7f79717f807f807f807f807f"
+  },
+  {
+    "serial": "DRONE-MARK-BLU-PROD-FLEET-040",
+    "timeslot": 4,
+    "timestamp": "2025-10-01T11:12:06.465845",
+    "qrng_seed": "3b15445aae51eb76260d8ed5f4ab9aa1a60e2ce817afdf972ed98b431f962931",
+    "badge": "7f7f8280807b3f80807f8180807f8180"
+  }
+]

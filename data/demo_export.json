@@ -1,0 +1,44 @@
+[
+  {
+    "serial": "TEST-DRONE-001",
+    "timeslot": 1,
+    "timestamp": "2025-10-01T10:45:10.028542",
+    "qrng_seed": "240e87668ee97150dced9aa50fb2a28777b545ba9c9de46ae85f1f4268cb5af4",
+    "badge": "7f7e867a865c6d808280868082808680"
+  },
+  {
+    "serial": "TEST-DRONE-002",
+    "timeslot": 1,
+    "timestamp": "2025-10-01T10:45:10.491781",
+    "qrng_seed": "48ca00ca462ad63a83ccb47d8786931f6a7bf3b6bb6930be550ca308102e2d15",
+    "badge": "8076807e80848783807e7d83807e7d83"
+  },
+  {
+    "serial": "TEST-DRONE-003",
+    "timeslot": 1,
+    "timestamp": "2025-10-01T10:45:10.903354",
+    "qrng_seed": "b47f3e14a766960b626ff9c90b24a83dd92b05118cd24741e531c07669b33702",
+    "badge": "7f81827d8289497d8481947d8481947d"
+  },
+  {
+    "serial": "TEST-DRONE-001",
+    "timeslot": 2,
+    "timestamp": "2025-10-01T10:45:11.519344",
+    "qrng_seed": "cdaaaf4b0a974b7b0231803f07c688d7c70b7fb8f6df77e8a0da54dde1a5c685",
+    "badge": "7f807f837f8392817f8479817f847981"
+  },
+  {
+    "serial": "TEST-DRONE-002",
+    "timeslot": 2,
+    "timestamp": "2025-10-01T10:45:11.901197",
+    "qrng_seed": "51663ef5ea60ae07c9cc9a31fb60c552f1f6dc4ae06492682d4817bbfa21c1ef",
+    "badge": "7f86897b7b834d7f7f7b927f7f7b927f"
+  },
+  {
+    "serial": "TEST-DRONE-003",
+    "timeslot": 2,
+    "timestamp": "2025-10-01T10:45:12.370057",
+    "qrng_seed": "bd94faa49fabaf581c55993019dbb3d992db9267f162b743e5cb452d7a268bbf",
+    "badge": "7f7f80858a78957d817e787d817e787d"
+  }
+]
