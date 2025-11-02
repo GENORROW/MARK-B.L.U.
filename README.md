@@ -1,108 +1,213 @@
-# MARK-B.L.U. Professional System# MARK-B.L.U. - AI Agent Identity & Monitoring System# MARK-B.L.U. 1.0: Part-1: The Hashing Mechanism
+# MARK-B.L.U. Core Platform# MARK-B.L.U. Professional System# MARK-B.L.U. - AI Agent Identity & Monitoring System# MARK-B.L.U. 1.0: Part-1: The Hashing Mechanism
 
 
 
-**Multi-Agent Badge-based Location-independent Unified System**
+Multi-Agent Quantum Badge Lifecycle Utility (MARK-B.L.U.) provides a quantum-enhanced identity and communication verification layer for autonomous agents. This repository now hosts the **core services only** – quantum badge generation, badge rotation, encrypted messaging, and administrative verification.
 
 
 
-A professional quantum-secured agent identity and communication verification system.## Table of Contents## Overview
+> **Important:** The Streamlit dashboard has been extracted to a dedicated private repository. See [Frontend Separation](#frontend-separation) for details.**Multi-Agent Badge-based Location-independent Unified System**
 
 
 
----1. [Overview](#overview)
+## Features
 
 
 
-## System Overview2. [System Architecture](#system-architecture)The MARK-B.L.U. Architecture is quantum encryption framework built using parameterized quantum circuits. It simulates a hash mechanism based on quantum circuit behavior, to safeguard autonomous & AI Infrastructure.
+- **Quantum Badge Generation** – 16-qubit Qiskit circuits with seeded rotations and entanglementA professional quantum-secured agent identity and communication verification system.## Table of Contents## Overview
+
+- **Time-based Badge Rotation** – configurable timeslots (default 5 minutes) with forward secrecy
+
+- **Secure Messaging** – AES-256-CBC encryption using SHA-256 keys derived from quantum badges
+
+- **Centralised Verification** – SQLite audit trail for badge history and message confirmation
+
+- **Security Analytics** – statistical tests located in `analysis/` for entropy, collisions, and avalanche effect---1. [Overview](#overview)
 
 
 
-MARK-B.L.U. provides a secure, quantum-based identity management system for autonomous agents with:3. [Features](#features)
+## Repository Structure
 
 
 
-- **Quantum Badge Generation**: 16-qubit quantum circuits (Qiskit)4. [Installation](#installation)This mechanism demonstrates a first-step implementation that maps classical input data to quantum parameters, extracts measurement-based signatures, and secures agent identity & output communication logs.
+```## System Overview2. [System Architecture](#system-architecture)The MARK-B.L.U. Architecture is quantum encryption framework built using parameterized quantum circuits. It simulates a hash mechanism based on quantum circuit behavior, to safeguard autonomous & AI Infrastructure.
 
-- **AES-256-CBC Encryption**: Quantum-derived encryption keys
+agent_system/            # Core identity, database, and communication modules
 
-- **Badge Rotation**: Time-based identity rotation (5-minute timeslots)5. [Configuration](#configuration)
+analysis/                # Statistical verification scripts for the quantum hash
 
-- **Centralized Verification**: Admin can verify any communication retroactively
+quantum_hash/            # Quantum circuit construction and helpers
 
-- **Database Tracking**: SQLite-based identity and communication logging6. [Usage](#usage)## Features
+visualizations/          # Generated diagrams for internal documentationMARK-B.L.U. provides a secure, quantum-based identity management system for autonomous agents with:3. [Features](#features)
 
+data/                    # SQLite databases (development only)
 
+docs/                    # Additional documentation (e.g., badge methodology)
 
----7. [API Reference](#api-reference)
+requirements.txt         # Python dependencies for the core services
 
+CHANGELOG.md             # Historical release notes- **Quantum Badge Generation**: 16-qubit quantum circuits (Qiskit)4. [Installation](#installation)This mechanism demonstrates a first-step implementation that maps classical input data to quantum parameters, extracts measurement-based signatures, and secures agent identity & output communication logs.
 
+VERSION_7_UPDATES.md     # Summary of the latest restructuring
 
-## Quick Start8. [Security](#security)- Parameterized quantum circuit with entangling layers
-
-
-
-### Installation9. [Troubleshooting](#troubleshooting)- Input encoding into continuous quantum gate parameters
-
-
-
-```bash- Statevector-based computation
-
-pip install qiskit streamlit pandas cryptography
-
-```---- Tests for entropy, collisions, avalanche effect, and bit independence
-
-
-
-### Run Dashboard
-
-
-
-```bash## Overview## Installation
-
-cd MARK-BLU
-
-streamlit run web_dashboard_professional.py
+FUTURE_SCOPE.md          # Long-term roadmap, including drone integration- **AES-256-CBC Encryption**: Quantum-derived encryption keys
 
 ```
 
-MARK-B.L.U. (Multi-Agent Resource Keeper - Blockchain Leveraged Utility) is an advanced AI agent identity generation and monitoring system that provides:### Requirements
+- **Badge Rotation**: Time-based identity rotation (5-minute timeslots)5. [Configuration](#configuration)
 
-### Login
+## Getting Started
+
+- **Centralized Verification**: Admin can verify any communication retroactively
+
+1. **Clone the repository**
+
+   ```bash- **Database Tracking**: SQLite-based identity and communication logging6. [Usage](#usage)## Features
+
+   git clone https://github.com/GENORROW/MARK-B.L.U..git
+
+   cd MARK-B.L.U.
+
+   ```
+
+---7. [API Reference](#api-reference)
+
+2. **Create a Python environment (3.10 recommended)**
+
+   ```bash
+
+   python -m venv .venv
+
+   .venv\Scripts\activate  # Windows## Quick Start8. [Security](#security)- Parameterized quantum circuit with entangling layers
+
+   source .venv/bin/activate  # macOS/Linux
+
+   ```
 
 
 
-- **Username**: `genorrow@135`
+3. **Install core dependencies**### Installation9. [Troubleshooting](#troubleshooting)- Input encoding into continuous quantum gate parameters
 
-- **Password**: `genorrow@135`- Quantum-based identity generation for AI agents- Python 3.9+
+   ```bash
+
+   pip install -r requirements.txt
+
+   ```
+
+```bash- Statevector-based computation
+
+4. **Initialise the database (optional for demos)**
+
+   ```pythonpip install qiskit streamlit pandas cryptography
+
+   from agent_system.database_manager import IdentityDatabase
+
+   db = IdentityDatabase("data/system.db")```---- Tests for entropy, collisions, avalanche effect, and bit independence
+
+   db.initialise()
+
+   ```
 
 
 
-### Use- AES-256 encrypted communication between agents- Qiskit
+## Usage Example### Run Dashboard
 
 
 
-1. **Live Simulation** tab - Run step-by-step demonstration- Real-time monitoring and analytics- NumPy
+```python
 
-2. **Analytics** tab - View statistics and metrics
+from agent_system.agent_identity import Agent
 
-- Centralized database with complete audit trails
+from agent_system.database_manager import IdentityDatabase```bash## Overview## Installation
 
----
+from agent_system.secure_communication import SecureChannel
+
+cd MARK-BLU
+
+# Prepare services
+
+db = IdentityDatabase("data/system.db")streamlit run web_dashboard_professional.py
+
+channel = SecureChannel(db)
+
+```
+
+# Generate identities for two agents
+
+agent_a = Agent("AGENT-001")MARK-B.L.U. (Multi-Agent Resource Keeper - Blockchain Leveraged Utility) is an advanced AI agent identity generation and monitoring system that provides:### Requirements
+
+agent_b = Agent("AGENT-002")
+
+identity_a = agent_a.generate_identity(timeslot=1)### Login
+
+identity_b = agent_b.generate_identity(timeslot=1)
+
+
+
+db.store_identity(identity_a)
+
+db.store_identity(identity_b)- **Username**: `genorrow@135`
+
+
+
+# Secure message exchange- **Password**: `genorrow@135`- Quantum-based identity generation for AI agents- Python 3.9+
+
+ciphertext, iv = channel.encrypt_message("Status: Operational", identity_a)
+
+plaintext = channel.decrypt_message(ciphertext, iv, identity_a)
+
+print(plaintext)
+
+```### Use- AES-256 encrypted communication between agents- Qiskit
+
+
+
+## Frontend Separation
+
+
+
+The Streamlit-based dashboard lives in a **private repository** to keep the backend lightweight and modular. If you need the UI:1. **Live Simulation** tab - Run step-by-step demonstration- Real-time monitoring and analytics- NumPy
+
+
+
+1. Request access to the `MARK-B.L.U.-dashboard` repository.2. **Analytics** tab - View statistics and metrics
+
+2. Clone it alongside this project.
+
+3. Install the core package locally so the dashboard can import `agent_system` modules:- Centralized database with complete audit trails
+
+   ```bash
+
+   pip install -e ../MARK-B.L.U.---
+
+   ```
 
 - Web-based admin dashboard for system management### Setup
 
+## Development Workflow
+
 ## Architecture
 
+- Run statistical tests from `analysis/` when modifying the quantum hash.
+
+- Keep autogenerated databases (`data/*.db`) out of commits – add new fixtures instead.
+
+- Document major changes in `CHANGELOG.md` and `VERSION_7_UPDATES.md`.
+
+- Refer to `docs/badge_methodology.txt` for the detailed badge lifecycle methodology used in publications.### Core Components
 
 
-### Core Components
 
-### Key CapabilitiesClone the repo:
+## License### Key CapabilitiesClone the repo:
 
-1. **Agent Identity System** - Quantum badge generation and management
 
-2. **Secure Communication** - AES-256-CBC encryption
+
+MARK-B.L.U. Core is released under the MIT License. See `LICENSE` for full text.1. **Agent Identity System** - Quantum badge generation and management
+
+
+
+For questions or internal access requests, contact the project maintainer.2. **Secure Communication** - AES-256-CBC encryption
+
 
 3. **Database Manager** - SQLite storage and verification
 
