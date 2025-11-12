@@ -1,4 +1,4 @@
-# MARK-B.L.U. - AI Agent Identity Monitoring & Hashing Mechanism
+# MARK-B.L.U. 1.2 - AI Agent Identity Monitoring & Hashing Mechanism
 
 
 
