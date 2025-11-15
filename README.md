@@ -27,12 +27,12 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 
 ## System Architecture
 1. Quantum Hash Core
-At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
-    - ***Hadamard Initialization*** — Establishes uniform superposition across all qubits.
-    - ***Entanglement Churning (CZ Gates)*** — Introduces quantum correlations for non-local dependencies.
-    - ***Seeded Rotations (RZ/RX)*** — Parameterized by a 512-bit QRNG seed, embedding unique, unrepeatable phase information.
-    - ***Measurement & Hashing*** — Collapses quantum amplitudes to produce a 16-bit raw output, which is then SHA-256 hashed into a 256-bit badge.
-This process ensures that no two badges are ever statistically or physically identical, providing an identity layer underpinned by quantum indeterminacy rather than deterministic randomness.
+  At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
+      - ***Hadamard Initialization*** — Establishes uniform superposition across all qubits.
+      - ***Entanglement Churning (CZ Gates)*** — Introduces quantum correlations for non-local dependencies.
+      - ***Seeded Rotations (RZ/RX)*** — Parameterized by a 512-bit QRNG seed, embedding unique, unrepeatable phase information.
+      - ***Measurement & Hashing*** — Collapses quantum amplitudes to produce a 16-bit raw output, which is then SHA-256 hashed into a 256-bit badge.
+  This process ensures that no two badges are ever statistically or physically identical, providing an identity layer underpinned by quantum indeterminacy rather than deterministic randomness.
 
 2. Agent Badge Generation
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
