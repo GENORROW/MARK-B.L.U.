@@ -10,10 +10,10 @@ This release of this technical repository marks the first formal public deployme
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
 The architecture, in concept, provides a dynamic, verifiable identity system for autonomous AI agents that works in essentially two parts, with its hashing core and the additive badge rotation dynamic. Through both, it essentially:
-- Generates cryptographic identities from the quantum measurements rather than mere algorithmic pseudorandomness;
-- Rotates each identity badge periodically, preventing long-term tracking or replay attacks;
-- By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
-- And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
+  - Generates cryptographic identities from the quantum measurements rather than mere algorithmic pseudorandomness;
+  - Rotates each identity badge periodically, preventing long-term tracking or replay attacks;
+  - By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
+  - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
 The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials.
 
 ## Architectural Philosophy
