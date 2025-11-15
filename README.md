@@ -28,17 +28,17 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 ## System Architecture
 1. Quantum Hash Core
 At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
-  - ***Hadamard Initialization*** — Establishes uniform superposition across all qubits.
-  - ***Entanglement Churning (CZ Gates)*** — Introduces quantum correlations for non-local dependencies.
-  - ***Seeded Rotations (RZ/RX)*** — Parameterized by a 512-bit QRNG seed, embedding unique, unrepeatable phase information.
-  - ***Measurement & Hashing*** — Collapses quantum amplitudes to produce a 16-bit raw output, which is then SHA-256 hashed into a 256-bit badge.
+    - ***Hadamard Initialization*** — Establishes uniform superposition across all qubits.
+    - ***Entanglement Churning (CZ Gates)*** — Introduces quantum correlations for non-local dependencies.
+    - ***Seeded Rotations (RZ/RX)*** — Parameterized by a 512-bit QRNG seed, embedding unique, unrepeatable phase information.
+    - ***Measurement & Hashing*** — Collapses quantum amplitudes to produce a 16-bit raw output, which is then SHA-256 hashed into a 256-bit badge.
 This process ensures that no two badges are ever statistically or physically identical, providing an identity layer underpinned by quantum indeterminacy rather than deterministic randomness.
 
 2. Agent Badge Generation
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
-  - Privacy through pseudonymity ( agents cannot be persistently tracked);
-  - Security through entropy (each badge is physically unguessable);
-  - Auditability through metadata binding (every badge embeds serial and timeslot context).
+    - Privacy through pseudonymity ( agents cannot be persistently tracked);
+    - Security through entropy (each badge is physically unguessable);
+    - Auditability through metadata binding (every badge embeds serial and timeslot context).
 
 3. Time-based Badge Rotation
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
@@ -46,11 +46,11 @@ MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default
  \text{timeslot} = \left\lfloor \frac{t_{\text{current}} - t_{\text{epoch}}}{t_{\text{slot}}} \right\rfloor
  ]
 Each rotation:
-  - Generates a fresh 512-bit QRNG seed
-  - Executes a new 16-qubit circuit.
-  - Derives a unique 256-bit badge.
-  - Stores the badge securely in the central database.
-  - Deletes the previous badge to maintain forward secrecy.
+    - Generates a fresh 512-bit QRNG seed
+    - Executes a new 16-qubit circuit.
+    - Derives a unique 256-bit badge.
+    - Stores the badge securely in the central database.
+    - Deletes the previous badge to maintain forward secrecy.
 Overarching outcome is that even a total compromise of a current badge cannot decrypt or infer past communications, without access to badge history logs, an advantage unique to quantum-driven systems.
 
 4. Secure Communication Layer
@@ -151,8 +151,6 @@ Access upon request for verified partners.
 
 ## Getting Started
 
-- **Centralized Verification**: Admin can verify any communication retroactively.
-
 1. **Clone the repository**
 
    ```bash- **Database Tracking**: SQLite-based identity and communication logging6. [Usage](#usage)## Features
@@ -200,7 +198,7 @@ Access upon request for verified partners.
    ```
 
 
-### Key CapabilitiesClone the repo:
+### Key Capabilities
 1. **Agent Identity System** - Quantum badge generation and management
 2. **Secure Communication** - AES-256-CBC encryption
 3. **Database Manager** - SQLite storage and verification
@@ -209,7 +207,6 @@ Access upon request for verified partners.
 
 
 ### Centralized Verification
-
 - All badges stored with timeslot info;
 - Admin can verify any message retroactively;
 - Complete audit trail.
