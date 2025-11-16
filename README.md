@@ -6,7 +6,7 @@ MARK-B.L.U. (Base Level Unifier) represents a quantum-enhanced digital identity 
 
 At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cryptographic robustness to generate non-reproducible, evolving, time-variant digital identities for distributed intelligent agents. Each agent periodically receives a quantum-derived badge, which serves as a cryptographic identity token, rotating automatically to ensure forward secrecy and unlinkability.
 
-This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure.
+This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. \
 
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
@@ -15,7 +15,7 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
   - Rotates each identity badge periodically, preventing long-term tracking or replay attacks;
   - By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
   - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
-The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials.
+The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials. \
 
 
 ## Architectural Philosophy
@@ -25,7 +25,7 @@ The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scala
 - ***Administrative Layer*** — Manages verification, auditing, and badge provenance, enabling retrospective proof of authenticity.
 This hybrid architecture ensures quantum-grade unpredictability with classical-grade deployability, making it both scientifically sound and eventually, industry practical.
 
-The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly.
+The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly. \
 
 
 ## System Architecture
@@ -82,7 +82,7 @@ MARK-B.L.U. was architected to deliver five principal cryptographic guarantees:
 
 Table
 
-These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems.
+These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems. \
 
 
 ## Repository Structure
@@ -110,7 +110,7 @@ MARK-BLU/
 ├── CHANGELOG.md \
 └── FUTURE_SCOPE.md \
 
-
+\
 ## Statistical Validation
 
 Results' Table
@@ -118,13 +118,13 @@ Results' Table
 These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties, which are suitable for cryptographic identity derivation within NISQ-era constraints.
 
 ## Key Enterprise Advantages
-Feature                                    Impact
-Quantum Entropy Integration                Provides information-theoretic security; non-predictable even by quantum adversaries.
-Identity Rotation                          Enforces temporal isolation; eliminates static credential vulnerabilities.
-Auditable Provenance                       Enables compliance-grade traceability and forensic validation.
-Low Infrastructure Overhead                Operable on standard CPUs via quantum simulators; scalable to real hardware.
-Interoperable Design                       Python-based API allows integration with agent frameworks, IoT networks, and security stacks.
-
+        Feature                                                      Impact
+Quantum Entropy Integration     Provides information-theoretic security; non-predictable even by quantum adversaries. \
+Identity Rotation               Enforces temporal isolation; eliminates static credential vulnerabilities. \
+Auditable Provenance            Enables compliance-grade traceability and forensic validation. \
+Low Infrastructure Overhead     Operable on standard CPUs via quantum simulators; scalable to real hardware. \
+Interoperable Design            Python-based API allows integration with agent frameworks, IoT networks, and security stacks.
+\
 
 ## Installation & Quick Start
 git clone https://github.com/GENORROW/MARK-B.L.U..git
