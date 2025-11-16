@@ -118,13 +118,13 @@ Results' Table
 These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties, which are suitable for cryptographic identity derivation within NISQ-era constraints.
 
 ## Key Enterprise Advantages
-        Feature                                                      Impact
-Quantum Entropy Integration     Provides information-theoretic security; non-predictable even by quantum adversaries. \
-Identity Rotation               Enforces temporal isolation; eliminates static credential vulnerabilities. \
-Auditable Provenance            Enables compliance-grade traceability and forensic validation. \
-Low Infrastructure Overhead     Operable on standard CPUs via quantum simulators; scalable to real hardware. \
-Interoperable Design            Python-based API allows integration with agent frameworks, IoT networks, and security stacks.
-\
+             Feature                                                      Impact
+    Quantum Entropy Integration     Provides information-theoretic security; non-predictable even by quantum adversaries.
+    Identity Rotation               Enforces temporal isolation; eliminates static credential vulnerabilities.
+    Auditable Provenance            Enables compliance-grade traceability and forensic validation.
+    Low Infrastructure Overhead     Operable on standard CPUs via quantum simulators; scalable to real hardware.
+    Interoperable Design            Python-based API allows integration with agent frameworks, IoT networks, and security stacks.
+
 
 ## Installation & Quick Start
 git clone https://github.com/GENORROW/MARK-B.L.U..git
