@@ -40,12 +40,14 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 This process ensures that no two badges are ever statistically or physically identical, providing an identity layer underpinned by quantum indeterminacy rather than deterministic randomness.
 
 **2. Agent Badge Generation**
+
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
   - Privacy through pseudonymity ( agents cannot be persistently tracked);
   - Security through entropy (each badge is physically unguessable);
   - Auditability through metadata binding (every badge embeds serial and timeslot context).
 
 **3. Time-based Badge Rotation**
+
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
 
 [
@@ -61,6 +63,7 @@ Each rotation:
 Overarching outcome is that even a total compromise of a current badge cannot decrypt or infer past communications, without access to badge history logs, an advantage unique to quantum-driven systems.
 
 **4. Secure Communication Layer**
+
 Once generated, the badge becomes the root of trust for encrypted communication. Encryption workflow:
 
  [
@@ -70,9 +73,11 @@ Once generated, the badge becomes the root of trust for encrypted communication.
 Messages are encrypted using AES-256-CBC, with 128-bit random initialization vectors (IVs), PKCS#7 padding, and timeslot-bound authentication metadata. Decryption requires querying the badge corresponding to the sender’s timeslot, ensuring that only agents possessing the valid badge for that time window can communicate or authenticate successfully.
 
 **5. Administrative Verification Layer**
+
 The centralized verification engine (SQLite, for 1.0) records every badge with agent serial, timeslot index, QRNG seed, and the generation timestamp. The administrators can replay badge generation by re-executing the quantum circuit using the stored seed, offering verifiable quantum provenance. This property, absent in classical systems, allows auditors or security teams to prove that a given badge originated from a legitimate, quantifiable quantum process.
 
 **6. Security & Assurance Framework**
+
 MARK-B.L.U. was architected to deliver five principal cryptographic guarantees:
 
 Table
