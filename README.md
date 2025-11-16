@@ -110,7 +110,7 @@ MARK-BLU/
 ├── CHANGELOG.md \
 └── FUTURE_SCOPE.md \
 
-\
+
 ## Statistical Validation
 
 Results' Table
