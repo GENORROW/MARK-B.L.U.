@@ -90,20 +90,20 @@ MARK-BLU/
 
 ├── agent_system/          # Core identity, communication, and storage modules \
 &emsp;  │   ├── agent_identity.py \
-  │   ├── secure_communication.py \
-  │   ├── database_manager.py \
-  │ \
+&emsp;  │   ├── secure_communication.py \
+&emsp;  │   ├── database_manager.py \
+&emsp;  │ \
 ├── quantum_hash/          # Parameterized 16-qubit circuit logic \
-  │   ├── input_encoder.py \
-  │   ├── circuit_builder.py \
-  │   └── hash_core.py \
-  │ \
+&emsp;  │   ├── input_encoder.py \
+&emsp;  │   ├── circuit_builder.py \
+&emsp;  │   └── hash_core.py \
+&emsp;  │ \
 ├── analysis/              # Entropy, collision, avalanche, and independence tests \
-  │   ├── test_entropy.py \
-  │   ├── test_collisions.py \
-  │   ├── test_avalanche.py \
-  │   └── test_bit_independence.py \
-  │
+&emsp;  │   ├── test_entropy.py \
+&emsp;  │   ├── test_collisions.py \
+&emsp;  │   ├── test_avalanche.py \
+&emsp;  │   └── test_bit_independence.py \
+&emsp;  │
 ├── docs/                  # Internal documentation, figures, and methodology \
 ├── data/                  # SQLite database (development) \
 ├── requirements.txt \
