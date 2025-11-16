@@ -1,4 +1,6 @@
-# MARK-B.L.U. 1.0 - Agent Identity Monitoring & Hashing Mechanism
+# MARK-B.L.U. 1.0 
+
+## Agent Identity Monitoring & Hashing Mechanism
 
 This is a Quantum-Secured Identity Layer for the Autonomous World, utilizing Quantum Hashing Mechanism and an Agent Identity Badge Rotation System to do so.
 
