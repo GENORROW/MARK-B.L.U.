@@ -488,6 +488,6 @@ https://www.genorrow.com/MARK-B.L.U.
 
 
 ### License
-Released under the MIT License.
-MARK-B.L.U. - Secured AI Agent Identity & Monitoring System
+Released under the MIT License. \
+MARK-B.L.U. - Secured AI Agent Identity & Monitoring System \
 **© 2025 GENORROW ENTERPRISES. All rights reserved.**
