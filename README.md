@@ -103,7 +103,7 @@ MARK-BLU/
 &emsp;  │   ├── test_collisions.py \
 &emsp;  │   ├── test_avalanche.py \
 &emsp;  │   └── test_bit_independence.py \
-&emsp;  │
+&emsp;  │ \
 ├── docs/                  # Internal documentation, figures, and methodology \
 ├── data/                  # SQLite database (development) \
 ├── requirements.txt \
