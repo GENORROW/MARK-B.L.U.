@@ -108,7 +108,7 @@ MARK-BLU/
 ├── data/                  # SQLite database (development) \
 ├── requirements.txt \
 ├── CHANGELOG.md \
-└── FUTURE_SCOPE.md \
+└── FUTURE_SCOPE.md
 
 
 ## Statistical Validation
