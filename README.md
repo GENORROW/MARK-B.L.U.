@@ -89,7 +89,7 @@ These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecos
 MARK-BLU/
 
 ├── agent_system/          # Core identity, communication, and storage modules \
-&emsp  │   ├── agent_identity.py \
+&emsp;  │   ├── agent_identity.py \
   │   ├── secure_communication.py \
   │   ├── database_manager.py \
   │ \
