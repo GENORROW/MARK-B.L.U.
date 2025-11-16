@@ -44,6 +44,7 @@ Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an e
 
 **3. Time-based Badge Rotation**
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
+
 [
  \text{timeslot} = \left\lfloor \frac{t_{\text{current}} - t_{\text{epoch}}}{t_{\text{slot}}} \right\rfloor
  ]
@@ -53,13 +54,16 @@ Each rotation:
     - Derives a unique 256-bit badge.
     - Stores the badge securely in the central database.
     - Deletes the previous badge to maintain forward secrecy.
+
 Overarching outcome is that even a total compromise of a current badge cannot decrypt or infer past communications, without access to badge history logs, an advantage unique to quantum-driven systems.
 
 **4. Secure Communication Layer**
 Once generated, the badge becomes the root of trust for encrypted communication. Encryption workflow:
+
  [
  \text{AES_key} = \text{SHA-256}(\text{quantum_badge})
  ]
+
 Messages are encrypted using AES-256-CBC, with 128-bit random initialization vectors (IVs), PKCS#7 padding, and timeslot-bound authentication metadata. Decryption requires querying the badge corresponding to the sender’s timeslot, ensuring that only agents possessing the valid badge for that time window can communicate or authenticate successfully.
 
 **5. Administrative Verification Layer**
@@ -75,49 +79,29 @@ These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecos
 ## Repository Structure
 MARK-BLU/
 ├── agent_system/          # Core identity, communication, and storage modules
-
 │   ├── agent_identity.py
-
 │   ├── secure_communication.py
-
 │   ├── database_manager.py
-
 │
-
 ├── quantum_hash/          # Parameterized 16-qubit circuit logic
-
 │   ├── input_encoder.py
-
 │   ├── circuit_builder.py
-
 │   └── hash_core.py
-
 │
-
 ├── analysis/              # Entropy, collision, avalanche, and independence tests
-
 │   ├── test_entropy.py
-
 │   ├── test_collisions.py
-
 │   ├── test_avalanche.py
-
 │   └── test_bit_independence.py
-
 │
-
 ├── docs/                  # Internal documentation, figures, and methodology
-
 ├── data/                  # SQLite database (development)
-
 ├── requirements.txt
-
 ├── CHANGELOG.md
-
 └── FUTURE_SCOPE.md
 
 
-Statistical Validation
+## Statistical Validation
 
 Results' Table
 
