@@ -236,7 +236,6 @@ Access upon request for verified partners.
 - `timeslot` - Time period│
 - `badge` - Quantum-generated badge (32 bytes)
 - `qrng_seed` - Random seed for generation
-  - Quantum Hash Layer
 
 
 ## Limitations
