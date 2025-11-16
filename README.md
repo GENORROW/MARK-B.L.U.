@@ -8,6 +8,7 @@ At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cr
 
 This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure.
 
+
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
 The architecture, in concept, provides a dynamic, verifiable identity system for autonomous AI agents that works in essentially two parts, with its hashing core and the additive badge rotation dynamic. Through both, it essentially:
   - Generates cryptographic identities from the quantum measurements rather than mere algorithmic pseudorandomness;
@@ -15,6 +16,7 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
   - By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
   - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
 The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials.
+
 
 ## Architectural Philosophy
 The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scalable, comprising three distinct yet synergistic layers:
@@ -24,6 +26,7 @@ The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scala
 This hybrid architecture ensures quantum-grade unpredictability with classical-grade deployability, making it both scientifically sound and eventually, industry practical.
 
 The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly.
+
 
 ## System Architecture
 **1. Quantum Hash Core**
@@ -38,9 +41,9 @@ This process ensures that no two badges are ever statistically or physically ide
 
 **2. Agent Badge Generation**
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
-    - Privacy through pseudonymity ( agents cannot be persistently tracked);
-    - Security through entropy (each badge is physically unguessable);
-    - Auditability through metadata binding (every badge embeds serial and timeslot context).
+  - Privacy through pseudonymity ( agents cannot be persistently tracked);
+  - Security through entropy (each badge is physically unguessable);
+  - Auditability through metadata binding (every badge embeds serial and timeslot context).
 
 **3. Time-based Badge Rotation**
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
@@ -49,11 +52,11 @@ MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default
  \text{timeslot} = \left\lfloor \frac{t_{\text{current}} - t_{\text{epoch}}}{t_{\text{slot}}} \right\rfloor
  ]
 Each rotation:
-    - Generates a fresh 512-bit QRNG seed
-    - Executes a new 16-qubit circuit.
-    - Derives a unique 256-bit badge.
-    - Stores the badge securely in the central database.
-    - Deletes the previous badge to maintain forward secrecy.
+  - Generates a fresh 512-bit QRNG seed
+  - Executes a new 16-qubit circuit.
+  - Derives a unique 256-bit badge.
+  - Stores the badge securely in the central database.
+  - Deletes the previous badge to maintain forward secrecy.
 
 Overarching outcome is that even a total compromise of a current badge cannot decrypt or infer past communications, without access to badge history logs, an advantage unique to quantum-driven systems.
 
