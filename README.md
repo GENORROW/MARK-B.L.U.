@@ -29,7 +29,7 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 
 
 ## System Architecture
-####**1. Quantum Hash Core**
+#### **1. Quantum Hash Core**
 
   At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
   - ***Hadamard Initialization*** — Establishes uniform superposition across all qubits.
