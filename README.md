@@ -39,6 +39,8 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 
 ## System Architecture
 
+This architecture is a quantum-genesis alternative for the current identity methods, which is built for eventual deployment in actual high-octane, uncertain, multi-nodal, dynamic and zero-trust environment applications. The entire architecture has two broad components; first being the quantum hashing mechanism responsible for generating quantum-derived cryptographic identities, and the other being the agent badge generation and rotation system built upon that quantum core. The 1.0 project at large has been structured for clarity, modularity, and extensibility. The reason for the election of the said approach was quite straightforward — to keep the project portable, and bolster non-complex interpretability and developmental efficiency for further advancement inputs.
+
 <div align="center"> <br>
 
 <table><tr><td><img width="865" height="768" alt="Quantum Hashing Pipeline (1 1)" src="https://github.com/user-attachments/assets/0b630839-7417-4280-af2d-c9b8498943de" />
@@ -46,6 +48,8 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 </td></tr></table>
 
 </div> <br>
+
+The novelty of MARK-B.L.U. 1.0 lies in employing quantum measurement out-comes as the root entropy source for digital identity management, that yields information-theoretic unpredictability, irreversible collapse, and verifiable provenance while retaining classical operational practicality. <br>
 
 ### **1. Quantum Hash Core**
 
