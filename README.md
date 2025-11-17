@@ -51,7 +51,7 @@ This process ensures that no two badges are ever statistically or physically ide
 ### **2. Agent Badge Generation**
 
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
-  - Privacy through pseudonymity ( agents cannot be persistently tracked);
+  - Privacy through pseudonymity (agents cannot be persistently tracked);
   - Security through entropy (each badge is physically unguessable);
   - Auditability through metadata binding (every badge embeds serial and timeslot context).
 
