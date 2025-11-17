@@ -131,6 +131,9 @@ MARK-BLU/
 | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property |
 | **Bit Independence** | χ² p-value > 0.05 | Statistically independent bits |
 
+<img width="1024" height="768" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
+
+
 These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints.
 
 ## Key Enterprise Advantages
