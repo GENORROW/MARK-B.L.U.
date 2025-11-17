@@ -27,7 +27,7 @@ The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scala
 - ***Administrative Layer*** — Manages verification, auditing, and badge provenance, enabling retrospective proof of authenticity.
 This hybrid architecture ensures quantum-grade unpredictability with classical-grade deployability, making it both scientifically sound and eventually, industry practical.
 
-The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly. \
+The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly.
 
 
 ## System Architecture
