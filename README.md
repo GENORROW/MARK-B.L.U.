@@ -140,7 +140,7 @@ To test the robustness of the architecture, it was ran through four primary hash
 
 </div>
 
-<div align="center">
+<div align="center"> <br>
   <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
 </div>
 
