@@ -129,7 +129,7 @@ MARK-BLU/
 
 To test the robustness of the architecture, it was ran through four primary hash evaluation benchmarks. The results that follow, while still under refinement, showcase early evidence of desirable cryptographic properties like diffusion and randomness - even at the 1.0's level.
 
-<div align="center">
+<div align="center"> <br>
   
   | Metric               | Result              | Interpretation                 |
   |----------------------|---------------------|--------------------------------|
