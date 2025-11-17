@@ -7,36 +7,8 @@ matplotlib>=3.5.0
 cryptography>=3.4.0
 pycryptodome>=3.15.0
 
-# Database and storage
-sqlite3  # Built into Python 3.x
-
-# Additional utilities for agent simulation
-secrets  # Built into Python 3.x
-hashlib  # Built into Python 3.x
-datetime  # Built into Python 3.x
-json     # Built into Python 3.x
-
 # Development and testing
 pytest>=6.0.0
 
-# ============================================
-# HARDWARE INTEGRATION (Optional)
-# ============================================
-# Uncomment based on your drone hardware:
-
-# For MAVLink drones (Pixhawk, ArduPilot, PX4)
-# pymavlink>=2.4.0
-# dronekit>=2.9.2
-
-# For DJI drones (requires DJI SDK)
-# dji-sdk>=1.0.0  # Check DJI developer docs
-
-# For ROS-based drones (research/custom)
-# rospy>=1.15.0
-# catkin-tools>=0.6.0
-
-# For serial communication with flight controllers
-# pyserial>=3.5
-
-# For advanced drone control
-# mavsdk>=1.4.0
+# Optional: YAML configuration support
+# pyyaml>=6.0.0
