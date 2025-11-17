@@ -16,8 +16,8 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
   - Generates cryptographic identities from the quantum measurements rather than mere algorithmic pseudorandomness;
   - Rotates each identity badge periodically, preventing long-term tracking or replay attacks;
   - By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
-  - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy. <br>
-<div align="center">
+  - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
+<div align="center"> <br>
 <img width="734" height="272" alt="image" src="https://github.com/user-attachments/assets/b7676ced-f088-47d6-8f8b-ea3daedad34b" />
 </div> <br>
 The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials.
