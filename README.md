@@ -130,11 +130,11 @@ MARK-BLU/
 | **Collision Rate** | 0% (10,000 samples) | No hash collisions detected |
 | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property |
 | **Bit Independence** | χ² p-value > 0.05 | Statistically independent bits |
-<\div>
+</div>
 
 <div align="center">
 <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
-<\div>
+</div>
 
 These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints.
 
