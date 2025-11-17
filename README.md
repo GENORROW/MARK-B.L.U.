@@ -124,12 +124,12 @@ MARK-BLU/
 
 ## Statistical Validation
 <div align="center">
-  | Metric | Result | Interpretation |
-  |--------|--------|----------------|
-  | **Shannon Entropy** | 7.98/8.0 bits | Near-optimal randomness |
-  | **Collision Rate** | 0% (10,000 samples) | No hash collisions detected |
-  | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property |
-  | **Bit Independence** | χ² p-value > 0.05 | Statistically independent bits |
+  | Metric               | Result              | Interpretation                 |
+  |----------------------|---------------------|--------------------------------|
+  | **Shannon Entropy**  | 7.98/8.0 bits       | Near-optimal randomness        |
+  | **Collision Rate**   | 0% (10,000 samples) | No hash collisions detected    |
+  | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property   |
+  | **Bit Independence** | χ² p-value > 0.05   | Statistically independent bits |
 </div>
 
 <div align="center">
