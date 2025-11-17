@@ -41,8 +41,8 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 
 <div align="center"> <br>
 
-<table><tr><td><img align="right" width="0%" width="865" height="768" alt="Quantum Hashing Pipeline (1 1)" src="https://github.com/user-attachments/assets/0b630839-7417-4280-af2d-c9b8498943de" />
-</td><td><img align="left" width="0%" width="1024" height="768" alt="Quantum Hashing Pipeline (2)" src="https://github.com/user-attachments/assets/8d01a4c7-3092-43df-b318-f6fae423bc31" />
+<table><tr><td><img align="right" width="0.5%" width="865" height="768" alt="Quantum Hashing Pipeline (1 1)" src="https://github.com/user-attachments/assets/0b630839-7417-4280-af2d-c9b8498943de" />
+</td><td><img align="left" width="0.5%" width="1024" height="768" alt="Quantum Hashing Pipeline (2)" src="https://github.com/user-attachments/assets/8d01a4c7-3092-43df-b318-f6fae423bc31" />
 </td></tr></table>
 
 </div> <br>
