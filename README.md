@@ -39,7 +39,7 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 
 ## System Architecture
 
-This architecture is a quantum-genesis alternative for the current identity methods, which is built for eventual deployment in actual high-octane, uncertain, multi-nodal, dynamic and zero-trust environment applications. The entire architecture has two broad components; first being the quantum hashing mechanism responsible for generating quantum-derived cryptographic identities, and the other being the agent badge generation and rotation system built upon that quantum core.
+This architecture is a quantum-genesis alternative for the current identity methods, which is built for eventual deployment in actual high-octane, uncertain, and zero-trust environment applications. The entire architecture has two broad components; first being the quantum hashing mechanism responsible for generating quantum-derived cryptographic identities, and the other being the agent badge generation and rotation system built upon that quantum core.
 
 <div align="center"> <br>
 
@@ -49,9 +49,7 @@ This architecture is a quantum-genesis alternative for the current identity meth
 
 </div> <br>
 
-The 1.0 project at large has been structured for clarity, modularity, and extensibility. The reason for the election of the said approach was quite straightforward — to keep the project portable, and bolster non-complex interpretability and developmental efficiency for further advancement inputs.
-
-The novelty of MARK-B.L.U. 1.0 lies in employing quantum measurement out-comes as the root entropy source for digital identity management, that yields information-theoretic unpredictability, irreversible collapse, and verifiable provenance while retaining classical operational practicality. 
+The 1.0 project at large has been structured for clarity, modularity, and extensibility. The reason for the election of the said approach was quite straightforward — to keep the project portable, and bolster non-complex interpretability and developmental efficiency for further advancement inputs. The novelty of MARK-B.L.U. lies in employing quantum measurement out-comes as the root entropy source for digital identity management, that yields information-theoretic unpredictability, irreversible collapse, and verifiable provenance while retaining classical operational practicality, for multi-nodal dynamic implementability. 
 
 <br>
 
