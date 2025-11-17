@@ -23,8 +23,8 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
 </div> <br>
 The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials. 
 
-<br>
 
+<br>
 
 ## Architectural Philosophy
 The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scalable, comprising three distinct yet synergistic layers:
