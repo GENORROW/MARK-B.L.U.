@@ -142,9 +142,9 @@ To test the robustness of the architecture, it was ran through four primary hash
 
 <div align="center"> <br>
   <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
-</div>
+</div> <br>
 
-These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints.
+These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints. <br>
 
 ## Key Enterprise Advantages
 
@@ -159,7 +159,7 @@ These metrics validate that the quantum hash function exhibits non-trivial entro
   | **Interoperable Design**        | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
 
 </div>
-
+<br>
 
 ## Quick Start
 
