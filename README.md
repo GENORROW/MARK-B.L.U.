@@ -25,6 +25,7 @@ The architecture thus acts as the trust backbone of an intelligent agent ecosyst
 
 <br>
 
+
 ## Architectural Philosophy
 The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scalable, comprising three distinct yet synergistic layers:
 - ***Quantum Layer*** — Generates physical randomness through 16-qubit parameterized circuits, ensuring information-theoretic unpredictability;
