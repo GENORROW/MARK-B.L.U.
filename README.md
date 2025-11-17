@@ -730,11 +730,11 @@ This is a closed-source project. For partnership opportunities or feature reques
 
 **MIT License**
 
-MARK-B.L.U. — Quantum Identity Infrastructure for Autonomous Systems.
+MARK-B.L.U. — Quantum Identity Infrastructure for Autonomous Systems. /
 Enterprise licensing & secure deployments available upon request.
 
 © 2025 **GENORROW ENTERPRISES**. All rights reserved.
 
 ---
 
-*Built for the "tomorrow" of autonomous infrastructure. Secured by quantum nuances.*
+***Built for the "tomorrow" of autonomous infrastructure. Secured by quantum nuances.***
