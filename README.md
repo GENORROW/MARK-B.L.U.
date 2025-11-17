@@ -1,4 +1,4 @@
-<p class="copperplate-bold-text" # MARK-B.L.U. 1.0</p>
+# MARK-B.L.U. 1.0
 
 ## Agent Identity Monitoring & Hashing Mechanism
 
