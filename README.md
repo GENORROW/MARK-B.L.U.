@@ -10,7 +10,6 @@ At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cr
 
 This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. 
 
-'''
 <br/>
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
