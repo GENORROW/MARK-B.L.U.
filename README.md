@@ -38,6 +38,15 @@ The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it
 <br>
 
 ## System Architecture
+
+<div align="center"> <br>
+
+<table><tr><td><img width="865" height="768" alt="Quantum Hashing Pipeline (1 1)" src="https://github.com/user-attachments/assets/0b630839-7417-4280-af2d-c9b8498943de" />
+</td><td><img width="1024" height="768" alt="Quantum Hashing Pipeline (2)" src="https://github.com/user-attachments/assets/8d01a4c7-3092-43df-b318-f6fae423bc31" />
+</td></tr></table>
+
+</div> <br>
+
 ### **1. Quantum Hash Core**
 
   At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
