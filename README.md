@@ -52,9 +52,10 @@ Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an e
 
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
 
-[
+$$[
  \text{timeslot} = \left\lfloor \frac{t_{\text{current}} - t_{\text{epoch}}}{t_{\text{slot}}} \right\rfloor
- ]
+ ]$$
+
 Each rotation:
   - Generates a fresh 512-bit QRNG seed
   - Executes a new 16-qubit circuit.
@@ -68,9 +69,9 @@ Overarching outcome is that even a total compromise of a current badge cannot de
 
 Once generated, the badge becomes the root of trust for encrypted communication. Encryption workflow:
 
- [
+$$[
  \text{AES_key} = \text{SHA-256}(\text{quantum_badge})
- ]
+ ]$$
 
 Messages are encrypted using AES-256-CBC, with 128-bit random initialization vectors (IVs), PKCS#7 padding, and timeslot-bound authentication metadata. Decryption requires querying the badge corresponding to the sender’s timeslot, ensuring that only agents possessing the valid badge for that time window can communicate or authenticate successfully.
 
