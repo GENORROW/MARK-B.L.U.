@@ -146,13 +146,15 @@ These metrics validate that the quantum hash function exhibits non-trivial entro
 ## Key Enterprise Advantages
 
 <div align="center">
-| Feature | Impact |
-|---------|--------|
-| **Quantum Entropy Integration** | Information-theoretic security; non-predictable even by quantum adversaries |
-| **Identity Rotation** | Enforces temporal isolation; eliminates static credential vulnerabilities |
-| **Auditable Provenance** | Compliance-grade traceability and forensic validation |
-| **Low Infrastructure Overhead** | Operable on standard CPUs via quantum simulators; scalable to real hardware |
-| **Interoperable Design** | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
+  
+  | Feature                         | Impact                                                                               |
+  |---------------------------------|--------------------------------------------------------------------------------------|
+  | **Quantum Entropy Integration** | Information-theoretic security; non-predictable even by quantum adversaries          |
+  | **Identity Rotation**           | Enforces temporal isolation; eliminates static credential vulnerabilities            |
+  | **Auditable Provenance**        | Compliance-grade traceability and forensic validation                                |
+  | **Low Infrastructure Overhead** | Operable on standard CPUs via quantum simulators; scalable to real hardware          |
+  | **Interoperable Design**        | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
+
 </div>
 
 
