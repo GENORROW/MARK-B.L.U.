@@ -8,7 +8,7 @@ MARK-B.L.U. (Base Level Unifier) represents a quantum-enhanced digital identity 
 
 At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cryptographic robustness to generate non-reproducible, evolving, time-variant digital identities for distributed intelligent agents. Each agent periodically receives a quantum-derived badge, which serves as a cryptographic identity token, rotating automatically to ensure forward secrecy and unlinkability.
 
-This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure.
+This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. <br>
 
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
@@ -20,7 +20,7 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
 <div align="center"> <br>
 <img width="734" height="272" alt="image" src="https://github.com/user-attachments/assets/b7676ced-f088-47d6-8f8b-ea3daedad34b" />
 </div> <br>
-The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials.
+The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials. <br>
 
 
 ## Architectural Philosophy
@@ -30,7 +30,7 @@ The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scala
 - ***Administrative Layer*** — Manages verification, auditing, and badge provenance, enabling retrospective proof of authenticity.
 This hybrid architecture ensures quantum-grade unpredictability with classical-grade deployability, making it both scientifically sound and eventually, industry practical.
 
-The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly.
+The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly. <br>
 
 
 ## System Architecture
@@ -196,6 +196,7 @@ decrypted = channel.decrypt_message(encrypted, iv, identity)
 print(f"Badge: {identity.badge.hex()[:32]}...")
 print(f"Decrypted: '{decrypted}'")
 ```
+<br>
 
 ## Production Configuration
 
@@ -262,6 +263,7 @@ db = IdentityDatabase(db_path=config['database']['path'])
 </div>
 
 *Tested on: Intel i7-12700K, 32GB RAM, Python 3.11*
+<br>
 
 ## Web Dashboard
 
@@ -278,6 +280,7 @@ db = IdentityDatabase(db_path=config['database']['path'])
 **Access:** Dashboard repository available upon request for verified partners and enterprise clients.
 
 **Contact:** enterprises@genorrow.com for dashboard access and enterprise licensing.
+<br>
 
 ## Roadmap
 
@@ -297,6 +300,7 @@ db = IdentityDatabase(db_path=config['database']['path'])
 - **Compliance Certifications** — ISO 27001, FIPS 140-3 validation
 
 Detailed roadmap available in `FUTURE_SCOPE.md`
+<br>
 
 ## Database Schema
 
@@ -336,7 +340,7 @@ CREATE TABLE admin_users (
     last_login TEXT
 );
 ```
-
+<br>
 
 ## Technical Constraints
 
@@ -359,6 +363,8 @@ CREATE TABLE admin_users (
 - **Recommended:** 4 CPU cores, 8GB RAM, 10GB disk (production)
 - **Network:** <100ms latency for real-time badge verification
 - **Python:** 3.9+ (tested up to 3.12)
+
+<br>
 
 ## Core Operations
 
@@ -450,7 +456,7 @@ db.store_identity(original)
 stored = db.get_identity(serial="AGENT-001", timeslot=timeslot)
 print(f"Verification: {'✓ Valid' if stored.badge == original.badge else '✗ Invalid'}")
 ```
-
+<br>
 
 ## Enterprise Integration
 
@@ -540,6 +546,7 @@ def verify_badge():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 ```
+<br>
 
 ## Prerequisites
 
@@ -548,6 +555,8 @@ if __name__ == '__main__':
 - **Disk:** 1GB minimum, 10GB recommended (production)
 - **OS:** Windows, macOS, Linux (Ubuntu 20.04+)
 - **Network:** <100ms latency for real-time operations
+
+<br>
 
 ## API Reference
 
@@ -618,6 +627,7 @@ def admin_exists(username)            # Check if account exists
 **Security:** Change default credentials before production.
 
 ---
+<br>
 
 ## Security Best Practices
 
@@ -643,7 +653,7 @@ def admin_exists(username)            # Check if account exists
 | **Auditability** | QRNG seed storage enables verification |
 
 </div>
-
+<br>
 
 ## Troubleshooting
 
@@ -723,6 +733,7 @@ If issues persist:
    ```
 
 3. **Contact support:** enterprises@genorrow.com (include logs and error messages)
+<br>
 
 ## Version History
 
@@ -741,7 +752,7 @@ See `CHANGELOG.md` for complete version history.
 - Cryptographic validation suite (entropy, collision, avalanche tests)
 
 ---
-
+<br>
 
 ## Support & Partnership
 
@@ -762,6 +773,7 @@ We offer:
 This is a closed-source project. For partnership opportunities or feature requests, contact us at the email above.
 
 ---
+<br>
 
 ## License
 
