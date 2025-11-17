@@ -125,7 +125,7 @@ MARK-BLU/
 ## Statistical Validation
 <div align="center">
   
-  | Metric               | Result              | Interpretation                 | <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
+  | Metric               | Result              | Interpretation                 |
   |----------------------|---------------------|--------------------------------|
   | **Shannon Entropy**  | 7.98/8.0 bits       | Near-optimal randomness        |
   | **Collision Rate**   | 0% (10,000 samples) | No hash collisions detected    |
