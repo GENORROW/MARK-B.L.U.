@@ -8,8 +8,10 @@ MARK-B.L.U. (Base Level Unifier) represents a quantum-enhanced digital identity 
 
 At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cryptographic robustness to generate non-reproducible, evolving, time-variant digital identities for distributed intelligent agents. Each agent periodically receives a quantum-derived badge, which serves as a cryptographic identity token, rotating automatically to ensure forward secrecy and unlinkability.
 
-This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. <br/>
+This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. 
 
+'''
+<br/>
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
 The architecture, in concept, provides a dynamic, verifiable identity system for autonomous AI agents that works in essentially two parts, with its hashing core and the additive badge rotation dynamic. Through both, it essentially:
