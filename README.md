@@ -97,28 +97,28 @@ These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecos
 ## Repository Structure
 ```
 MARK-BLU/
-├── agent_system/              # Core identity, communication, and storage modules
-│   ├── agent_identity.py      # Quantum badge generation and agent lifecycle
-│   ├── secure_communication.py # AES-256 encrypted messaging layer
-│   ├── database_manager.py    # SQLite backend with audit logging
-│   └── admin_dashboard.py     # Streamlit web interface
+├── agent_system/                # Core identity, communication, and storage modules
+│   ├── agent_identity.py        # Quantum badge generation and agent lifecycle
+│   ├── secure_communication.py  # AES-256 encrypted messaging layer
+│   ├── database_manager.py      # SQLite backend with audit logging
+│   └── admin_dashboard.py       # Streamlit web interface
 │
-├── quantum_hash/              # Parameterized 16-qubit circuit logic
-│   ├── input_encoder.py       # Classical-to-quantum data encoding
-│   ├── circuit_builder.py     # Quantum circuit construction
-│   └── hash_core.py           # Quantum measurement and hashing
+├── quantum_hash/                # Parameterized 16-qubit circuit logic
+│   ├── input_encoder.py         # Classical-to-quantum data encoding
+│   ├── circuit_builder.py       # Quantum circuit construction
+│   └── hash_core.py             # Quantum measurement and hashing
 │
-├── analysis/                  # Cryptographic validation suite
-│   ├── test_entropy.py        # Shannon entropy verification
-│   ├── test_collisions.py     # Hash collision resistance testing
-│   ├── test_avalanche.py      # Avalanche effect measurement
+├── analysis/                    # Cryptographic validation suite
+│   ├── test_entropy.py          # Shannon entropy verification
+│   ├── test_collisions.py       # Hash collision resistance testing
+│   ├── test_avalanche.py        # Avalanche effect measurement
 │   └── test_bit_independence.py # Statistical independence checks
 │
-├── docs/                      # Technical documentation and methodology
-├── data/                      # SQLite databases (development/production)
-├── requirements.txt           # Python dependencies
-├── CHANGELOG.md               # Version history
-└── FUTURE_SCOPE.md            # Roadmap and planned features
+├── docs/                        # Technical documentation and methodology
+├── data/                        # SQLite databases (development/production)
+├── requirements.txt             # Python dependencies
+├── CHANGELOG.md                 # Version history
+└── FUTURE_SCOPE.md              # Roadmap and planned features
 ```
 
 
