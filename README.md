@@ -123,6 +123,9 @@ MARK-BLU/
 
 
 ## Statistical Validation
+
+To test the robustness of the architecture, it was ran through four primary hash evaluation benchmarks. The results that follow, while still under refinement, showcase early evidence of desirable cryptographic properties like diffusion and randomness - even at the 1.0's level.
+
 <div align="center">
   
   | Metric               | Result              | Interpretation                 |
@@ -132,7 +135,7 @@ MARK-BLU/
   | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property   |
   | **Bit Independence** | χ² p-value > 0.05   | Statistically independent bits |
 
-</div> /
+</div>
 
 <div align="center">
   <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
@@ -142,6 +145,7 @@ These metrics validate that the quantum hash function exhibits non-trivial entro
 
 ## Key Enterprise Advantages
 
+<div align="center">
 | Feature | Impact |
 |---------|--------|
 | **Quantum Entropy Integration** | Information-theoretic security; non-predictable even by quantum adversaries |
@@ -149,6 +153,7 @@ These metrics validate that the quantum hash function exhibits non-trivial entro
 | **Auditable Provenance** | Compliance-grade traceability and forensic validation |
 | **Low Infrastructure Overhead** | Operable on standard CPUs via quantum simulators; scalable to real hardware |
 | **Interoperable Design** | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
+</div>
 
 
 ## Quick Start
