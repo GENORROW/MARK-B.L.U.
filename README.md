@@ -91,7 +91,7 @@ MARK-B.L.U. was architected to deliver five principal cryptographic guarantees:
 | **Unlinkability** | Ephemeral badges with no persistent identifiers | Prevents agent tracking across timeslots |
 | **Auditability** | Centralized verification with quantum provenance | Compliance-grade forensic validation |
 
-These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems. \
+These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems.
 
 
 ## Repository Structure
@@ -246,6 +246,8 @@ db = IdentityDatabase(db_path=config['database']['path'])
 
 ### Performance Benchmarks
 
+<div align="center">
+
 | Operation | Latency | Throughput |
 |-----------|---------|------------|
 | Badge Generation | ~250ms | 4 badges/sec |
@@ -253,6 +255,8 @@ db = IdentityDatabase(db_path=config['database']['path'])
 | Message Decryption | ~2ms | 500 ops/sec |
 | Database Write | ~5ms | 200 ops/sec |
 | Badge Verification | ~1ms | 1000 ops/sec |
+
+</div>
 
 *Tested on: Intel i7-12700K, 32GB RAM, Python 3.11*
 
@@ -266,7 +270,7 @@ db = IdentityDatabase(db_path=config['database']['path'])
 - Agent communication visualization
 - Credential and audit management
 - Security event logging
-- Professional UI with authentication
+- Intuitive UI with authentication
 
 **Access:** Dashboard repository available upon request for verified partners and enterprise clients.
 
@@ -335,6 +339,8 @@ CREATE TABLE admin_users (
 
 ### Current Version Limitations
 
+<div align="center">
+
 | Constraint | Impact | Mitigation |
 |------------|--------|------------|
 | **Simulated Quantum Circuits** | ~250ms badge generation latency | Hardware quantum backend integration (Q1 2026) |
@@ -342,6 +348,8 @@ CREATE TABLE admin_users (
 | **Single-node Database** | Not geo-distributed | Multi-region replication planned |
 | **Statevector Simulation** | Potential measurement bias | Real quantum hardware eliminates simulation artifacts |
 | **5-minute Badge Rotation** | Fixed temporal granularity | Configurable intervals in production config |
+
+</div>
 
 ### Operational Requirements
 - **Minimum:** 2 CPU cores, 4GB RAM, 1GB disk
@@ -551,6 +559,8 @@ def generate_identity(timeslot: int) -> AgentIdentity
 
 **`AgentIdentity`**
 
+<div align="center">
+
 | Attribute | Type | Description |
 |-----------|------|-------------|
 | `serial` | `str` | Agent identifier |
@@ -558,6 +568,8 @@ def generate_identity(timeslot: int) -> AgentIdentity
 | `timeslot` | `int` | Time period index |
 | `timestamp` | `str` | ISO 8601 creation time |
 | `qrng_seed` | `bytes` | 512-bit QRNG seed |
+
+</div>
 
 ---
 
@@ -617,6 +629,7 @@ def admin_exists(username)            # Check if account exists
 - Keep dependencies updated
 
 ### Cryptographic Guarantees
+<div align="center">
 
 | Property | Implementation |
 |----------|----------------|
@@ -625,6 +638,8 @@ def admin_exists(username)            # Check if account exists
 | **Replay Prevention** | Timeslot validation enforces temporal bounds |
 | **Non-Predictability** | Quantum randomness (information-theoretic) |
 | **Auditability** | QRNG seed storage enables verification |
+
+</div>
 
 
 ## Troubleshooting
@@ -673,6 +688,8 @@ conn.commit()
 
 ### Error Codes
 
+<div align="center">
+
 | Code | Meaning | Solution |
 |------|---------|----------|
 | `E001` | Identity not found | Ensure badge generated for timeslot |
@@ -680,6 +697,8 @@ conn.commit()
 | `E003` | Database connection error | Check file permissions on `data/` directory |
 | `E004` | Quantum backend failure | Update Qiskit or check system resources |
 | `E005` | Invalid timeslot | Timeslot must be positive integer |
+
+</div>
 
 ---
 
