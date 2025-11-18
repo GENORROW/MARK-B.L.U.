@@ -1,4 +1,6 @@
-# MARK-B.L.U. 1.0 - Agent Identity Monitoring & Hashing Mechanism
+# MARK-B.L.U. 1.0
+
+## Agent Identity Monitoring & Hashing Mechanism
 
 This is a Quantum-Secured Identity Layer for the Autonomous World, utilizing Quantum Hashing Mechanism and an Agent Identity Badge Rotation System to do so.
 
@@ -6,8 +8,9 @@ MARK-B.L.U. (Base Level Unifier) represents a quantum-enhanced digital identity 
 
 At its fundamental  core, MARK-B.L.U. fuses quantum randomness with classical cryptographic robustness to generate non-reproducible, evolving, time-variant digital identities for distributed intelligent agents. Each agent periodically receives a quantum-derived badge, which serves as a cryptographic identity token, rotating automatically to ensure forward secrecy and unlinkability.
 
-This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. \
+This release of this technical repository marks the first formal public deployment of the MARK-B.L.U. backend, that is the foundation of a subsequent future-ready, enterprise-grade Quantum Identity Infrastructure (QII) designed to evolve with the post-quantum cybersecurity landscape, for securing the ever permeating and prevalent AI and Autonomous Infrastructure. 
 
+<br/>
 
 ## Conceptual Overview — What MARK-B.L.U. Actually Does
 The architecture, in concept, provides a dynamic, verifiable identity system for autonomous AI agents that works in essentially two parts, with its hashing core and the additive badge rotation dynamic. Through both, it essentially:
@@ -15,8 +18,13 @@ The architecture, in concept, provides a dynamic, verifiable identity system for
   - Rotates each identity badge periodically, preventing long-term tracking or replay attacks;
   - By extension, enables authenticated, encrypted communication between agents using AES-256 keys derived from quantum badges;
   - And supports centralized verification and auditing, allowing administrators to confirm badge authenticity and communication legitimacy.
-The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials. \
+<div align="center"> <br>
+<img width="734" height="272" alt="image" src="https://github.com/user-attachments/assets/b7676ced-f088-47d6-8f8b-ea3daedad34b" />
+</div> <br>
+The architecture thus acts as the trust backbone of an intelligent agent ecosystem, ensuring every autonomous process, drone, or “AI node” can be uniquely identified, verified, and secured without dependence on centralized trust or static credentials. 
 
+
+<br>
 
 ## Architectural Philosophy
 The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scalable, comprising three distinct yet synergistic layers:
@@ -25,10 +33,26 @@ The MARK-B.L.U. 1.0 is intentionally kept to be modular, reproducible, and scala
 - ***Administrative Layer*** — Manages verification, auditing, and badge provenance, enabling retrospective proof of authenticity.
 This hybrid architecture ensures quantum-grade unpredictability with classical-grade deployability, making it both scientifically sound and eventually, industry practical.
 
-The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly. \
+The above does it for the conceptual basis of what MARK-B.L.U. is. As for how it works, the next section shall be an exclusive dive into that explicitly. 
 
+<br>
 
 ## System Architecture
+
+This architecture is a quantum-genesis alternative for the current identity methods, which is built for eventual deployment in actual high-octane, uncertain, and zero-trust environment applications. The entire architecture has two broad components; first being the quantum hashing mechanism responsible for generating quantum-derived cryptographic identities, and the other being the agent badge generation and rotation system built upon that quantum core.
+
+<div align="center"> <br>
+
+<table><tr><td><img width="865" height="768" alt="Quantum Hashing Pipeline (1 1)" src="https://github.com/user-attachments/assets/0b630839-7417-4280-af2d-c9b8498943de" />
+</td><td><img width="1024" height="768" alt="Quantum Hashing Pipeline (2)" src="https://github.com/user-attachments/assets/8d01a4c7-3092-43df-b318-f6fae423bc31" />
+</td></tr></table>
+
+</div> <br>
+
+The 1.0 project at large has been structured for clarity, modularity, and extensibility. The reason for the election of the said approach was quite straightforward — to keep the project portable, and bolster non-complex interpretability and developmental efficiency for further advancement inputs. The novelty of MARK-B.L.U. lies in employing quantum measurement out-comes as the root entropy source for digital identity management, that yields information-theoretic unpredictability, irreversible collapse, and verifiable provenance while retaining classical operational practicality, for multi-nodal dynamic implementability. 
+
+<br>
+
 ### **1. Quantum Hash Core**
 
   At the foundation lies the quantum hashing engine, responsible for converting classical inputs into quantum-measured hash outputs. Each 16-qubit circuit undergoes:
@@ -42,7 +66,7 @@ This process ensures that no two badges are ever statistically or physically ide
 ### **2. Agent Badge Generation**
 
 Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an ephemeral quantum badge. Badges are generated via the quantum hash engine and serve as the agent’s cryptographic identity credential during its current timeslot. This separation of stable ID and ephemeral badge ensures:
-  - Privacy through pseudonymity ( agents cannot be persistently tracked);
+  - Privacy through pseudonymity (agents cannot be persistently tracked);
   - Security through entropy (each badge is physically unguessable);
   - Auditability through metadata binding (every badge embeds serial and timeslot context).
 
@@ -50,9 +74,10 @@ Each agent is assigned a persistent serial ID (e.g., AGENT-001) paired with an e
 
 MARK-B.L.U. employs temporal identity segmentation, where each timeslot (default = 5 minutes) triggers a new badge generation event:
 
-[
+$$[
  \text{timeslot} = \left\lfloor \frac{t_{\text{current}} - t_{\text{epoch}}}{t_{\text{slot}}} \right\rfloor
- ]
+ ]$$
+
 Each rotation:
   - Generates a fresh 512-bit QRNG seed
   - Executes a new 16-qubit circuit.
@@ -66,9 +91,9 @@ Overarching outcome is that even a total compromise of a current badge cannot de
 
 Once generated, the badge becomes the root of trust for encrypted communication. Encryption workflow:
 
- [
- \text{AES_key} = \text{SHA-256}(\text{quantum_badge})
- ]
+$$[
+ \text{AESkey} = \text{SHA-256}(\text{QuantumBadge})
+ ]$$
 
 Messages are encrypted using AES-256-CBC, with 128-bit random initialization vectors (IVs), PKCS#7 padding, and timeslot-bound authentication metadata. Decryption requires querying the badge corresponding to the sender’s timeslot, ensuring that only agents possessing the valid badge for that time window can communicate or authenticate successfully.
 
@@ -88,58 +113,77 @@ MARK-B.L.U. was architected to deliver five principal cryptographic guarantees:
 | **Unlinkability** | Ephemeral badges with no persistent identifiers | Prevents agent tracking across timeslots |
 | **Auditability** | Centralized verification with quantum provenance | Compliance-grade forensic validation |
 
-These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems. \
+These principles make MARK-B.L.U. a quantum-resilient security layer for AI ecosystems.
 
+<br>
 
 ## Repository Structure
 ```
 MARK-BLU/
-├── agent_system/              # Core identity, communication, and storage modules
-│   ├── agent_identity.py      # Quantum badge generation and agent lifecycle
-│   ├── secure_communication.py # AES-256 encrypted messaging layer
-│   ├── database_manager.py    # SQLite backend with audit logging
-│   └── admin_dashboard.py     # Streamlit web interface
+├── agent_system/                # Core identity, communication, and storage modules
+│   ├── agent_identity.py            # Quantum badge generation and agent lifecycle
+│   ├── secure_communication.py      # AES-256 encrypted messaging layer
+│   ├── database_manager.py          # SQLite backend with audit logging
+│   └── admin_dashboard.py           # Streamlit web interface
 │
-├── quantum_hash/              # Parameterized 16-qubit circuit logic
-│   ├── input_encoder.py       # Classical-to-quantum data encoding
-│   ├── circuit_builder.py     # Quantum circuit construction
-│   └── hash_core.py           # Quantum measurement and hashing
+├── quantum_hash/                # Parameterized 16-qubit circuit logic
+│   ├── input_encoder.py             # Classical-to-quantum data encoding
+│   ├── circuit_builder.py           # Quantum circuit construction
+│   └── hash_core.py                 # Quantum measurement and hashing
 │
-├── analysis/                  # Cryptographic validation suite
-│   ├── test_entropy.py        # Shannon entropy verification
-│   ├── test_collisions.py     # Hash collision resistance testing
-│   ├── test_avalanche.py      # Avalanche effect measurement
-│   └── test_bit_independence.py # Statistical independence checks
+├── analysis/                    # Cryptographic validation suite
+│   ├── test_entropy.py              # Shannon entropy verification
+│   ├── test_collisions.py           # Hash collision resistance testing
+│   ├── test_avalanche.py            # Avalanche effect measurement
+│   └── test_bit_independence.py     # Statistical independence checks
 │
-├── docs/                      # Technical documentation and methodology
-├── data/                      # SQLite databases (development/production)
-├── requirements.txt           # Python dependencies
-├── CHANGELOG.md               # Version history
-└── FUTURE_SCOPE.md            # Roadmap and planned features
+├── docs/                        # Technical documentation and methodology
+├── data/                        # SQLite databases (development/production)
+├── requirements.txt             # Python dependencies
+├── CHANGELOG.md                 # Version history
+└── FUTURE_SCOPE.md              # Roadmap and planned features
 ```
 
+<br>
 
 ## Statistical Validation
 
-| Metric | Result | Interpretation |
-|--------|--------|----------------|
-| **Shannon Entropy** | 7.98/8.0 bits | Near-optimal randomness |
-| **Collision Rate** | 0% (10,000 samples) | No hash collisions detected |
-| **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property |
-| **Bit Independence** | χ² p-value > 0.05 | Statistically independent bits |
+To test the robustness of the architecture, it was ran through four primary hash evaluation benchmarks. The results that follow, while still under refinement, showcase early evidence of desirable cryptographic properties like diffusion and randomness - even at the 1.0's level.
 
-These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints.
+<div align="center"> <br>
+  
+  | Metric               | Result              | Interpretation                 |
+  |----------------------|---------------------|--------------------------------|
+  | **Shannon Entropy**  | 7.98/8.0 bits       | Near-optimal randomness        |
+  | **Collision Rate**   | 0% (10,000 samples) | No hash collisions detected    |
+  | **Avalanche Effect** | 49.8% bit flip rate | Excellent diffusion property   |
+  | **Bit Independence** | χ² p-value > 0.05   | Statistically independent bits |
+
+</div>
+
+<div align="center"> <br>
+  <img width="554" height="368" alt="MARK-BLU Analysis" src="https://github.com/user-attachments/assets/9744a548-13fb-4713-ae90-968fa6cae1ee" />
+</div> <br>
+
+These metrics validate that the quantum hash function exhibits non-trivial entropy and diffusion properties suitable for cryptographic identity derivation within NISQ-era constraints. 
+
+<br>
 
 ## Key Enterprise Advantages
 
-| Feature | Impact |
-|---------|--------|
-| **Quantum Entropy Integration** | Information-theoretic security; non-predictable even by quantum adversaries |
-| **Identity Rotation** | Enforces temporal isolation; eliminates static credential vulnerabilities |
-| **Auditable Provenance** | Compliance-grade traceability and forensic validation |
-| **Low Infrastructure Overhead** | Operable on standard CPUs via quantum simulators; scalable to real hardware |
-| **Interoperable Design** | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
+<div align="center">
+  
+  | Feature                         | Impact                                                                               |
+  |---------------------------------|--------------------------------------------------------------------------------------|
+  | **Quantum Entropy Integration** | Information-theoretic security; non-predictable even by quantum adversaries          |
+  | **Identity Rotation**           | Enforces temporal isolation; eliminates static credential vulnerabilities            |
+  | **Auditable Provenance**        | Compliance-grade traceability and forensic validation                                |
+  | **Low Infrastructure Overhead** | Operable on standard CPUs via quantum simulators; scalable to real hardware          |
+  | **Interoperable Design**        | Python-based API integrates with agent frameworks, IoT networks, and security stacks |
 
+</div>
+
+<br>
 
 ## Quick Start
 
@@ -176,6 +220,8 @@ decrypted = channel.decrypt_message(encrypted, iv, identity)
 print(f"Badge: {identity.badge.hex()[:32]}...")
 print(f"Decrypted: '{decrypted}'")
 ```
+
+<br>
 
 ## Production Configuration
 
@@ -229,6 +275,8 @@ db = IdentityDatabase(db_path=config['database']['path'])
 
 ### Performance Benchmarks
 
+<div align="center">
+
 | Operation | Latency | Throughput |
 |-----------|---------|------------|
 | Badge Generation | ~250ms | 4 badges/sec |
@@ -237,7 +285,11 @@ db = IdentityDatabase(db_path=config['database']['path'])
 | Database Write | ~5ms | 200 ops/sec |
 | Badge Verification | ~1ms | 1000 ops/sec |
 
+</div>
+
 *Tested on: Intel i7-12700K, 32GB RAM, Python 3.11*
+
+<br>
 
 ## Web Dashboard
 
@@ -249,11 +301,13 @@ db = IdentityDatabase(db_path=config['database']['path'])
 - Agent communication visualization
 - Credential and audit management
 - Security event logging
-- Professional UI with authentication
+- Intuitive UI with authentication
 
 **Access:** Dashboard repository available upon request for verified partners and enterprise clients.
 
 **Contact:** enterprises@genorrow.com for dashboard access and enterprise licensing.
+
+<br>
 
 ## Roadmap
 
@@ -273,6 +327,8 @@ db = IdentityDatabase(db_path=config['database']['path'])
 - **Compliance Certifications** — ISO 27001, FIPS 140-3 validation
 
 Detailed roadmap available in `FUTURE_SCOPE.md`
+
+<br>
 
 ## Database Schema
 
@@ -313,10 +369,13 @@ CREATE TABLE admin_users (
 );
 ```
 
+<br>
 
 ## Technical Constraints
 
 ### Current Version Limitations
+
+<div align="center">
 
 | Constraint | Impact | Mitigation |
 |------------|--------|------------|
@@ -326,11 +385,15 @@ CREATE TABLE admin_users (
 | **Statevector Simulation** | Potential measurement bias | Real quantum hardware eliminates simulation artifacts |
 | **5-minute Badge Rotation** | Fixed temporal granularity | Configurable intervals in production config |
 
+</div>
+
 ### Operational Requirements
 - **Minimum:** 2 CPU cores, 4GB RAM, 1GB disk
 - **Recommended:** 4 CPU cores, 8GB RAM, 10GB disk (production)
 - **Network:** <100ms latency for real-time badge verification
 - **Python:** 3.9+ (tested up to 3.12)
+
+<br>
 
 ## Core Operations
 
@@ -423,6 +486,7 @@ stored = db.get_identity(serial="AGENT-001", timeslot=timeslot)
 print(f"Verification: {'✓ Valid' if stored.badge == original.badge else '✗ Invalid'}")
 ```
 
+<br>
 
 ## Enterprise Integration
 
@@ -513,6 +577,8 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 ```
 
+<br>
+
 ## Prerequisites
 
 - **Python:** 3.9+ (tested up to 3.12)
@@ -520,6 +586,8 @@ if __name__ == '__main__':
 - **Disk:** 1GB minimum, 10GB recommended (production)
 - **OS:** Windows, macOS, Linux (Ubuntu 20.04+)
 - **Network:** <100ms latency for real-time operations
+
+<br>
 
 ## API Reference
 
@@ -534,6 +602,8 @@ def generate_identity(timeslot: int) -> AgentIdentity
 
 **`AgentIdentity`**
 
+<div align="center">
+
 | Attribute | Type | Description |
 |-----------|------|-------------|
 | `serial` | `str` | Agent identifier |
@@ -541,6 +611,8 @@ def generate_identity(timeslot: int) -> AgentIdentity
 | `timeslot` | `int` | Time period index |
 | `timestamp` | `str` | ISO 8601 creation time |
 | `qrng_seed` | `bytes` | 512-bit QRNG seed |
+
+</div>
 
 ---
 
@@ -587,6 +659,8 @@ def admin_exists(username)            # Check if account exists
 
 ---
 
+<br>
+
 ## Security Best Practices
 
 **Production Checklist:**
@@ -600,6 +674,7 @@ def admin_exists(username)            # Check if account exists
 - Keep dependencies updated
 
 ### Cryptographic Guarantees
+<div align="center">
 
 | Property | Implementation |
 |----------|----------------|
@@ -609,6 +684,9 @@ def admin_exists(username)            # Check if account exists
 | **Non-Predictability** | Quantum randomness (information-theoretic) |
 | **Auditability** | QRNG seed storage enables verification |
 
+</div>
+
+<br>
 
 ## Troubleshooting
 
@@ -656,6 +734,8 @@ conn.commit()
 
 ### Error Codes
 
+<div align="center">
+
 | Code | Meaning | Solution |
 |------|---------|----------|
 | `E001` | Identity not found | Ensure badge generated for timeslot |
@@ -663,6 +743,8 @@ conn.commit()
 | `E003` | Database connection error | Check file permissions on `data/` directory |
 | `E004` | Quantum backend failure | Update Qiskit or check system resources |
 | `E005` | Invalid timeslot | Timeslot must be positive integer |
+
+</div>
 
 ---
 
@@ -684,6 +766,7 @@ If issues persist:
    ```
 
 3. **Contact support:** enterprises@genorrow.com (include logs and error messages)
+<br>
 
 ## Version History
 
@@ -703,6 +786,7 @@ See `CHANGELOG.md` for complete version history.
 
 ---
 
+<br>
 
 ## Support & Partnership
 
@@ -723,14 +807,18 @@ We offer:
 This is a closed-source project. For partnership opportunities or feature requests, contact us at the email above.
 
 ---
+<br>
 
 ## License
 
 **MIT License**
 
-MARK-B.L.U. — Quantum-Secured Identity Layer for Autonomous Systems  
+**MARK-B.L.U. — Quantum Identity Infrastructure for Autonomous Systems.** <br>
+*Enterprise licensing & secure deployments available upon request.*
+<br>
+
 © 2025 **GENORROW ENTERPRISES**. All rights reserved.
 
 ---
 
-*Built for the future of autonomous infrastructure. Secured by quantum physics.*
+***Built for the "tomorrow" of autonomous infrastructure. Secured by quantum nuances.***
