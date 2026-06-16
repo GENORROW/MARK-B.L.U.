@@ -6,11 +6,11 @@ MARK-B.L.U. (Base Layer Unification) 1.0 is a quantum-classical hybrid cryptogra
 
 The architecture has two components built in ordered dependency: a quantum hashing core that generates quantum-derived cryptographic identities, and an agent badge rotation system built upon it.
 
-## Architecture
+## ARCHITECTURE
 
 ### Quantum Hashing Pipeline
 
-<img width="1024" height="768" alt="Quantum Hashing Pipeline MARK-B L U  1 0" src="https://github.com/user-attachments/assets/070976f1-9a20-4be2-a99f-70b2730089ff" />
+<img width="824" height="468" alt="Quantum Hashing Pipeline MARK-B L U  1 0" src="https://github.com/user-attachments/assets/070976f1-9a20-4be2-a99f-70b2730089ff" />
 
 The hashing pipeline maps an arbitrary-length classical byte input to a deterministic 256-bit quantum-derived digest through six sequential stages:
 
@@ -37,7 +37,7 @@ Each agent holds a time-variant 256-bit quantum-derived badge rotating on fixed 
 | Replay Prevention | Non-repeating badge sequences by quantum indeterminacy |
 | Quantum Unpredictability | Security grounded in physics, not computational hardness |
 
-## Evaluation
+## EVALUATION
 
 All experiments run on Qiskit's exact statevector simulator backend.
 
@@ -50,7 +50,7 @@ All experiments run on Qiskit's exact statevector simulator backend.
 | Hamming distance mean (300 pairs) | 128.34/256 bits | 128 bits|
 | Byte uniformity χ²(df=255) | 292.58 (threshold: 293.25) | Not rejected at p=0.05 |
 
-## Positioning and Limitations
+## POSITIONING & LIMITATIONS
 MARK-B.L.U. 1.0 operates via statevector simulation; a noiseless classical emulation of quantum circuit behavior, rather than physical quantum hardware. This is an intentional staging decision. The 1.0 is designed to:
 
 - establish the mathematical correctness of the architecture,
@@ -60,7 +60,7 @@ MARK-B.L.U. 1.0 operates via statevector simulation; a noiseless classical emula
 The architecture does not claim post-quantum security in the formal complexity-theoretic sense. It claims information-theoretic unpredictability grounded in quantum mechanical indeterminacy; a property that does not rely on the computational limitations of an adversary, but on the physical impossibility of predicting or replicating quantum measurement outcomes. Operating on 16 qubits, the circuit satisfies NISQ (Noisy Intermediate-Scale Quantum) constraints, an intentional design choice for maximal near-term implementability over raw scale.
 
 
-## Future Directions
+## FUTURE DIRECTIONS
 
 - Measurement-based hardware extraction: Transition from statevector simulation to real quantum backends, deriving entropy from physical shot-level randomness rather than structural circuit complexity; upgrading the unpredictability guarantee from computational to information-theoretic.
 - Enhanced post-processing: Integration of Toeplitz randomness extractors or multi-round sponge constructions for improved statistical uniformity without compromising the quantum-first entropy source.
