@@ -10,7 +10,9 @@ The architecture has two components built in ordered dependency: a quantum hashi
 
 ### Quantum Hashing Pipeline
 
-<img width="824" height="568" alt="Quantum Hashing Pipeline MARK-B L U  1 0" src="https://github.com/user-attachments/assets/070976f1-9a20-4be2-a99f-70b2730089ff" />
+<div align="center">
+  <img width="824" height="568" alt="Quantum Hashing Pipeline MARK-B L U  1 0" src="https://github.com/user-attachments/assets/070976f1-9a20-4be2-a99f-70b2730089ff" />
+</div>
 
 The hashing pipeline maps an arbitrary-length classical byte input to a deterministic 256-bit quantum-derived digest through six sequential stages:
 
