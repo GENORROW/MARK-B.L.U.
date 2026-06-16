@@ -16,13 +16,15 @@ The architecture has two components built in ordered dependency: a quantum hashi
 
 The hashing pipeline maps an arbitrary-length classical byte input to a deterministic 256-bit quantum-derived digest through six sequential stages:
 
-| Stage | Module | Description | \
-| Classical Input | hash_core | Arbitrary-length byte input | \
-| Parameter Encoder | input_encoder | SHA-512 pre-stretch → 64-byte seed; bytes scaled to θᵢ ∈ [0, 2π]; cyclic HMAC-SHA-512 extension to 192 parameters | \
-| Quantum Circuit | circuit_builder | 16 qubits, 6 entangling layers; RY+RZ rotations; brick-wall CNOT entanglement | \
-| Statevector Simulation | hash_core | Exact noiseless simulation; outputs |ψ_out⟩ ∈ ℂ⁶⁵⁵³⁶ | \
-| Amplitude Extraction | hash_core | Re(αⱼ) and Im(αⱼ) serialized as float64 streams (~1 MB) | \
-| Final Hash Output | hash_core | H = SHAKE-256("qhash:" ‖ R ‖ I, 32) → 256-bit digest |
+
+| Stage                  | Module          | Description | \
+| ---                    | ---             | --- |
+| Classical Input        | hash_core       | Arbitrary-length byte input | \
+| Parameter Encoder      | input_encoder   | SHA-512 pre-stretch → 64-byte seed; bytes scaled to θᵢ ∈ [0, 2π]; cyclic HMAC-SHA-512 extension to 192 parameters | \
+| Quantum Circuit        | circuit_builder | 16 qubits, 6 entangling layers; RY+RZ rotations; brick-wall CNOT entanglement | \
+| Statevector Simulation | hash_core       | Exact noiseless simulation; outputs |ψ_out⟩ ∈ ℂ⁶⁵⁵³⁶ | \
+| Amplitude Extraction   | hash_core       | Re(αⱼ) and Im(αⱼ) serialized as float64 streams (~1 MB) | \
+| Final Hash Output      | hash_core       | H = SHAKE-256("qhash:" ‖ R ‖ I, 32) → 256-bit digest |
 
 The full 16-qubit circuit (282 gates, depth 24, 90 CNOTs, 192 input-dependent parameters):
 
