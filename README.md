@@ -48,14 +48,15 @@ Each agent holds a time-variant 256-bit quantum-derived badge rotating on fixed 
 
 All experiments run on Qiskit's exact statevector simulator backend.
 
-| Metric | Observed | Ideal | \
-| Per-sample Shannon entropy (n=500) | 4.884 bits/byte(σ=0.081) | ~5.0 bits/byte | \
-| Pooled entropy (16,000 bytes) | 7.9886/8.00 bits/byte | 8.0 bits/byte | \
-| Collisions (1,000 inputs) | 0 | 0 | \
-| Avalanche flip rate | 49.6%(Δ=0.4pp from ideal) | 50% | \
-| BIC avg deviation (1,000 samples) | 1.14pp | ≤1.58pp noise floor | \
-| Hamming distance mean (300 pairs) | 128.34/256 bits | 128 bits| \
-| Byte uniformity χ²(df=255) | 292.58 (threshold: 293.25) | Not rejected at p=0.05 |
+| Metric | Observed | Ideal |
+| --- | --- | --- |
+| Per-sample Shannon entropy (n=500) | 4.884 bits/byte (σ=0.081) | ~5.0 bits/byte |
+| Pooled entropy (16,000 bytes) | 7.9886/8.00 bits/byte | 8.0 bits/byte |
+| Collisions (1,000 inputs) | 0 | 0 |
+| Avalanche flip rate | 49.6% (Δ=0.4pp from ideal) | 50% |
+| BIC avg deviation (1,000 samples) | 1.14pp | ≤1.58pp noise floor |
+| Hamming distance mean (300 pairs) | 128.34/256 bits | 128 bits |
+| Byte uniformity χ² (df=255) | 292.58 (threshold: 293.25) | Not rejected at p=0.05 |
 
 ## POSITIONING & LIMITATIONS
 MARK-B.L.U. 1.0 operates via statevector simulation; a noiseless classical emulation of quantum circuit behavior, rather than physical quantum hardware. This is an intentional staging decision. The 1.0 is designed to:
