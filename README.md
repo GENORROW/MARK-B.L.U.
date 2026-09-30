@@ -36,12 +36,12 @@ The full 16-qubit circuit (282 gates, depth 24, 90 CNOTs, 192 input-dependent pa
 
 Each agent holds a time-variant 256-bit quantum-derived badge rotating on fixed timeslots (default: 5 min). A persistent serial ID remains constant; the badge shapeshifts, enforcing forward secrecy and preventing entity-trackability.
 
-| Property | Quantum Contribution | \
-| --- | --- | \
-| Temporal Unlinkability | Independent measurements ensure zero statistical linkage across sessions | \
-| Forward Secrecy | Measurement collapse erases prior quantum state; past badges unrecoverable | \
-| Message Authentication | Badges unforgeable due to measurement irreproducibility | \
-| Replay Prevention | Non-repeating badge sequences by quantum indeterminacy | \
+| Property | Quantum Contribution |
+| --- | --- |
+| Temporal Unlinkability | Independent measurements ensure zero statistical linkage across sessions |
+| Forward Secrecy | Measurement collapse erases prior quantum state; past badges unrecoverable |
+| Message Authentication | Badges unforgeable due to measurement irreproducibility |
+| Replay Prevention | Non-repeating badge sequences by quantum indeterminacy |
 | Quantum Unpredictability | Security grounded in physics, not computational hardness |
 
 ## EVALUATION
