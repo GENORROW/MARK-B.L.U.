@@ -26,6 +26,8 @@ The hashing pipeline maps an arbitrary-length classical byte input to a determin
 | Amplitude Extraction | hash_core | Re(αⱼ) and Im(αⱼ) serialized as float64 streams (~1 MB) |
 | Final Hash Output | hash_core | H = SHAKE-256("qhash:" ‖ R ‖ I, 32) → 256-bit digest |
 
+
+
 The full 16-qubit circuit (282 gates, depth 24, 90 CNOTs, 192 input-dependent parameters):
 
 ![Circuit](visualizations/circuit_diagram_full.png)
